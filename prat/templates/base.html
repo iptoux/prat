@@ -26,10 +26,14 @@
                 Items
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Show</a>
-                <a class="dropdown-item" href="#">Update</a>
+                <a class="dropdown-item" href="/itemsList">Show</a>
+                <a class="dropdown-item" href="/items/refetch">Refetch</a>
+                <a class="dropdown-item" href="/items/update">Update</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Fetch from RESTAPi</a>
+                <a class="dropdown-item" href="#">Export</a>
+                <a class="dropdown-item" href="#">Import</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Clear DB</a>
               </div>
             </li>
             <li class="nav-item">
@@ -41,30 +45,24 @@
             
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Item-Id | Item-Name" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Item-Id | Name | Variation" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form><span style="margin-left: 6px;">alpha-v0.1.0.b3</span>
         </div>
       </nav>
-        <div class="container border-bottom" style="margin-top: 20px;padding-bottom: 20px;">
-            <div class="row">
-                <div class="col-sm-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-                <div class="col-sm-2 offset-sm-2">
-                    <h3 class="text-right">Sidebar</h3>
-                    <hr />
-                </div>
-            </div>
+        <div class="container border-bottom mt-4" style="padding-bottom: 20px;">
+          <div class="p-2">  
+            {% block content %}
+            {% endblock %}
           </div>
+        </div>
         
         <div class="container">
         <nav class="navbar fixed-bottom navbar-light" style="background-color: #e3f2fd;">
         
-            <div class="col-sm-4">Mode: {{ prat_mode }} &bull; Debug: {{ prat_debug }} </div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-3 text-right">Connected: No</div>
+            <div class="col-sm-auto">Mode: {{ prat_mode }} &bull; Debug: {{ prat_debug }} </div>
+            
+            <div class="col-sm-auto">Connected: {{ prat_conn }}</div>
       
         </nav>
         </div>
