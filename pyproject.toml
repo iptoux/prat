@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "PlentyRESTApiTools"
+version = "0.1.0"
+description = "Web application to handel PlentyMarkets RESPApi."
+authors = ["iptoux <iptoux@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.3"
+waitress = "^2.1.2"
+flask-sqlalchemy = "^3.1.1"
+sqlalchemy = "^2.0.21"
+flask-migrate = "^4.0.5"
+psycopg2-binary = "^2.9.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+bandit = "^1.7.5"
+flake8-pyproject = "^1.2.3"
+toml = "^0.10.2"
+
+
+[tool.bandit]
+exclude_dirs = [".venv","tests"]
+skips = ["B104"]
+
+
+[tool.flake8]
+ignore = ["F401","E402"]
+exclude = [".venv"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

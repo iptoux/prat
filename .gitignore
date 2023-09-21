@@ -1,0 +1,6 @@
+.env
+.env.dev
+.vscode
+__pycache__
+migrations
+instance
