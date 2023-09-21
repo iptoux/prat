@@ -13,6 +13,8 @@ flask-sqlalchemy = "^3.1.1"
 sqlalchemy = "^2.0.21"
 flask-migrate = "^4.0.5"
 psycopg2-binary = "^2.9.7"
+plenty-api = "^0.2.11.0"
+keyrings-alt = "^5.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
