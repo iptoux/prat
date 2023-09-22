@@ -5,7 +5,7 @@
 <p align="center" width="100%">
 <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/iptoux/prat/git_action_prat.yml?style=for-the-badge">
     <img src="https://img.shields.io/github/package-json/v/iptoux/prat?style=for-the-badge" title="GitHub package.json version">
-    <img src="https://img.shields.io/github/directory-file-count/iptoux/prat/lib?style=for-the-badge" title="GitHub repo file count (file extension)">
+    <img src="https://img.shields.io/github/directory-file-count/iptoux/prat/prat?style=for-the-badge" title="GitHub repo file count (file extension)">
     <img src="https://img.shields.io/github/languages/code-size/iptoux/prat?style=for-the-badge" title="GitHub code size in bytes">
     <img src="https://img.shields.io/github/issues/iptoux/prat?style=for-the-badge" title="GitHub issues">
     <img src="https://img.shields.io/github/license/iptoux/prat?style=for-the-badge" title="GitHub">
