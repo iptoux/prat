@@ -1,7 +1,7 @@
 # PlentyRESTApiTools
-<center>
-![PRAT GitHub Actions](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
-</center>
+
+[![PRAT GitHub Actions](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
+
 WebAplication to control/administrate RESPApi of PlentyMarkets
 
 ## Setup/Run
