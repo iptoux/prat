@@ -1,4 +1,4 @@
-name: PRAT Docker CI
+name: PRAT Build - Image
 
 on:
   push:
