@@ -1,5 +1,7 @@
 #!/usr/bin/env pythpn3
 # -*- coding: utf-8 -*-
+__version__ = "0.1.0"
+
 import os
 import plenty_api
 from flask import Flask
@@ -12,9 +14,10 @@ from typing import Any
 from pkg_resources import get_distribution, DistributionNotFound
 
 try:
+    print(get_distribution('prat').version)
     __version__ = get_distribution('prat').version
 except DistributionNotFound:
-    __version__ = '(local)'
+    __version__ = '0.1.0'
 
 import logging
 
@@ -34,16 +37,22 @@ if config_name == 'development':
 else: 
     dev=""
 
-
-app.config.update({
-    'DB__HOST':     os.environ[f'{dev}DB__HOST'],
-    'DB__DBNAME':   os.environ[f'{dev}DB__NAME'],
-    'DB__USER':     os.environ[f'{dev}DB__USER'],
-    'DB__PASSWORD': os.environ[f'{dev}DB__PASSWORD'],
-    'DB__ENGINE':   os.environ[f'{dev}DB__ENGINE'],
-    })
-
-
+try:
+    app.config.update({
+        'DB__HOST':     os.environ[f'{dev}DB__HOST'],
+        'DB__DBNAME':   os.environ[f'{dev}DB__NAME'],
+        'DB__USER':     os.environ[f'{dev}DB__USER'],
+        'DB__PASSWORD': os.environ[f'{dev}DB__PASSWORD'],
+        'DB__ENGINE':   os.environ[f'{dev}DB__ENGINE'],
+        })
+except KeyError as ke:
+    if os.environ['DCOKER'] == True:
+        print(f"Please docker configure environment variables!\nExample in /flaskapp/.env.example\nExit script!")
+        exit(0)
+    else:
+        print(f"Please configure environment variables!\nExample in .env.example\nExit script!")
+        exit(0)
+        
 app.config.update({'SQLALCHEMY_DATABASE_URI': app.config.get('DB__ENGINE')})
 app.debug = os.environ['PRAT_DEBUG']
 DEBUG = os.environ['PRAT_DEBUG']

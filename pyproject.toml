@@ -28,10 +28,12 @@ toml = "^0.10.2"
 exclude_dirs = [".venv","tests"]
 skips = ["B104"]
 
+[tool.poetry_bumpversion.file."prat/__init__.py"]
+[tool.poetry_bumpversion.file."prat/_version.py"]
 
 [tool.flake8]
-ignore = ["F401","E402"]
-exclude = [".venv"]
+ignore = ["F401","E402", "E302"]
+exclude = [".venv","tests"]
 
 
 [build-system]

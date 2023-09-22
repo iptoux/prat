@@ -1,0 +1,1 @@
+__version__ = "prat-v0.1.0"
