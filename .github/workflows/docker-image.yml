@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: PRAT Image CI
 
 on:
   schedule:
