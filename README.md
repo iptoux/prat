@@ -43,5 +43,5 @@ docker run --detach 'prat'
 
 ## ToDo (first)
 
-- [ ] [#1]
+- [ ] [#1]()
 - [ ] Add delight to the experience when all tasks are complete :tada:
