@@ -1,8 +1,9 @@
-name: PRAT Image CI
+name: PRAT Docker CI
 
 on:
-  schedule:
-  - cron: "0 2 * * 1-5"
+  pull_request:
+    paths:
+      - 'Dockerfile'
   
 jobs:
 
