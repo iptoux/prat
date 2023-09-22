@@ -43,5 +43,6 @@ docker run --detach 'prat'
 
 ## ToDo (first)
 
-- [ ] [#1](/../../issues/1)
-- [ ] [](/../../milestone/1)
+- [x] #1
+- [ ] https://github.com/iptoux/prat/issues/1
+- [ ] Add delight to the experience when all tasks are complete :tada:
