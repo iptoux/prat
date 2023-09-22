@@ -1,13 +1,12 @@
 name: PRAT Docker CI
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    paths:
+      - 'Dockerfile'
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
