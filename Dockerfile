@@ -14,7 +14,6 @@ RUN apt install gnupg ca-certificates git
 COPY pyproject.toml pyproject.toml
 COPY runner.py runner.py
 ADD prat /flaskapp/prat
-COPY poetry.lock poetry.lock
 COPY README.md README.md
 COPY .env.example .env.example
 
