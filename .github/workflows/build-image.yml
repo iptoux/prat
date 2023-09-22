@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'Dockerfile'
+  schedule:
+    - cron: '15 21 * * 6'
 
 jobs:
   build:
