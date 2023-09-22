@@ -46,7 +46,7 @@ try:
         'DB__ENGINE':   os.environ[f'{dev}DB__ENGINE'],
         })
 except KeyError as ke:
-    if os.environ['DCOKER'] == True:
+    if os.environ['DOCKER'] == True:
         print(f"Please docker configure environment variables!\nExample in /flaskapp/.env.example\nExit script!")
         exit(0)
     else:

@@ -1,6 +1,5 @@
 FROM python:3.9.18
 
-ARG DOCKER=True
 WORKDIR /flaskapp
 
 COPY pyproject.toml pyproject.toml
@@ -16,7 +15,7 @@ RUN poetry config virtualenvs.in-project true
 RUN poetry install --without dev
 RUN poetry self add poetry-dotenv-plugin
 
-ENV DCOKER=${DOCKER}
+ENV DOCKER=True
 
 EXPOSE 5000
 CMD [".venv/bin/python3","-m","waitress","--listen","0.0.0.0:5000","runner:app"]
