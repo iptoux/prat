@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/github/package-json/keywords/iptoux/prat?style=flat-square" title="GitHub package.json dynamic"> 
 </p>
 
-
+![GitHub](https://img.shields.io/github/license/iptoux/prat)
 
 Web-Application to control/administrate REST-API of Plenty Markets
 
