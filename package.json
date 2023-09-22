@@ -1,0 +1,24 @@
+{
+    "name": "PRAT - PlentyMarketsRESTApiTools",
+    "version": "0.1.0",
+    "description": "Web-Application to control/administrate REST-API of Plenty Markets.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/iptoux/prat.git"
+    },
+    "author": "Maik Roland <iptoux> Damm",
+    "license": "CC0-1.0",
+    "bugs": {
+      "url": "https://github.com/iptoux/prat/issues"
+    },
+    "keywords": [
+      "restapi",
+      "plentymarkets",
+      "api",
+      "plenty",
+      "webapplication",
+      "application",
+      "web"
+    ],
+    "homepage": "https://github.com/iptoux/prat#readme"
+  }

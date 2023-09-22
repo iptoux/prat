@@ -1,6 +1,6 @@
 # PlentyRESTApiTools
 
-[![PRAT CodeCheck](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
+[![PRAT CodeCheck](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/for-the-badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
 
 <p align="center" width="100%">
     <img src="https://img.shields.io/github/package-json/v/iptoux/prat?style=for-the-badge" title="GitHub package.json version">
