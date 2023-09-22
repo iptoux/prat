@@ -1,6 +1,6 @@
 # PlentyRESTApiTools
 
-[![PRAT GitHub Actions](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
+[![PRAT CodeCheck](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml/badge.svg)](https://github.com/iptoux/prat/actions/workflows/git_action_prat.yml)
 
 Web-Application to control/administrate REST-API of Plenty Markets
 
