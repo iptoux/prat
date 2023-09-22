@@ -24,7 +24,7 @@ docker build --pull --rm -f "Dockerfile" -t prat:v0.1.0 "."
 docker run --detach 'prat'
 ```
 
-## ToDo
+## ToDo (first)
 
 - [ ] #1 
 - [ ] https://github.com/iptoux/prat/milestone/1
