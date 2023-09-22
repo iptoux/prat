@@ -43,5 +43,5 @@ docker run --detach 'prat'
 
 ## ToDo (first)
 
-- [ ] [#1]()
-- [ ] [https://github.com/iptoux/prat/milestone/1]()
+- [ ] [#1](/../../issues/1)
+- [ ] [](/../../milestone/1)
